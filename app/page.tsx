@@ -1,8 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useMiniKit } from '@coinbase/minikit';
-import { useAuthenticate } from '@coinbase/onchainkit/minikit';
 import { CreatorOnboarding } from '../components/CreatorOnboarding';
 import { CreatorDashboard } from '../components/CreatorDashboard';
 import { FanTipping } from '../components/FanTipping';
@@ -10,13 +8,11 @@ import { WelcomeScreen } from '../components/WelcomeScreen';
 import { LoadingSpinner } from '../components/ui/LoadingSpinner';
 
 export default function Home() {
-  const { context } = useMiniKit();
-  const { user } = useAuthenticate();
   const [userType, setUserType] = useState<'creator' | 'fan' | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading and determine user type based on context
+    // Simulate loading
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
@@ -37,10 +33,7 @@ export default function Home() {
   }
 
   if (userType === 'creator') {
-    if (!user) {
-      return <CreatorOnboarding />;
-    }
-    return <CreatorDashboard />;
+    return <CreatorOnboarding />;
   }
 
   return <FanTipping />;
