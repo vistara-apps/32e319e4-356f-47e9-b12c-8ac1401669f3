@@ -4,10 +4,9 @@ import { useState } from 'react';
 import { Wallet, Settings, Zap, CheckCircle } from 'lucide-react';
 import { Button } from './ui/Button';
 import { Card } from './ui/Card';
-import { useMiniKit } from '@coinbase/minikit';
+
 
 export function CreatorOnboarding() {
-  const { context } = useMiniKit();
   const [currentStep, setCurrentStep] = useState(1);
   const [isConnecting, setIsConnecting] = useState(false);
   const [tipAmount, setTipAmount] = useState('0.001');
@@ -174,17 +173,7 @@ export function CreatorOnboarding() {
           </div>
         </Card>
 
-        {/* User Info */}
-        {context?.user && (
-          <div className="text-center">
-            <p className="text-sm text-text-secondary">
-              Setting up account for{' '}
-              <span className="text-text-primary font-medium">
-                {context.user.displayName || 'User'}
-              </span>
-            </p>
-          </div>
-        )}
+
       </div>
     </div>
   );
