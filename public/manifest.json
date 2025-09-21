@@ -1,0 +1,14 @@
+{
+  "name": "TipOnLike",
+  "description": "TipOnLike is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://32e319e4-356f-47e9-b12c-8ac1401669f3.vercel.app",
+  "properties": {
+    "app": {
+      "name": "TipOnLike",
+      "description": "TipOnLike is a Base Mini App built with Zara.",
+      "url": "https://32e319e4-356f-47e9-b12c-8ac1401669f3.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}

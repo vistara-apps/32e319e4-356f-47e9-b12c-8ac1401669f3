@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "TipOnLike",
+    "subtitle": "Built with Zara",
+    "description": "TipOnLike is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://32e319e4356f47e9b12c8ac1401669f3-m2o5.vercel.app",
+    "splashImageUrl": "https://32e319e4356f47e9b12c8ac1401669f3-m2o5.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://32e319e4356f47e9b12c8ac1401669f3-m2o5.vercel.app/image.png",
+    "tagline": "TipOnLike",
+    "screenshotUrls": [
+      "https://32e319e4356f47e9b12c8ac1401669f3-m2o5.vercel.app/screenshot.png",
+      "https://32e319e4356f47e9b12c8ac1401669f3-m2o5.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://32e319e4356f47e9b12c8ac1401669f3-m2o5.vercel.app/api/webhook"
+  }
+}
